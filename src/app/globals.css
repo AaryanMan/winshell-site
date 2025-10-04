@@ -1,26 +1,56 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --radius: 0.625rem;
+  --background: #020617;
+  --foreground: #f8fafc;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.35);
+  --glow: rgba(129, 140, 248, 0.45);
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(circle at 20% 20%, rgba(91, 206, 255, 0.08) 0, transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(196, 181, 253, 0.08) 0, transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(56, 189, 248, 0.06) 0, transparent 50%);
+}
+
+*,
+*::before,
+*::after {
+  border-color: rgba(226, 232, 240, 0.08);
+  outline-color: rgba(125, 211, 252, 0.3);
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+  color: white;
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%) rotate(20deg);
+  }
+  50% {
+    transform: translateX(20%) rotate(20deg);
+  }
+  100% {
+    transform: translateX(120%) rotate(20deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, -6px, 0);
+  }
+  50% {
+    transform: translate3d(0, 8px, 0);
+  }
 }
