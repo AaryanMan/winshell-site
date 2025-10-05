@@ -2,7 +2,7 @@
 
 An immersive, neon-inspired landing experience for the WinShell university capstone. The site pairs a WebGL shader backdrop with glassmorphism download cards and a scrollable PDF viewer so visitors can explore the full project report without leaving the page.
 
-Built with the Next.js App Router, Tailwind CSS v4 tokens, shadcn/ui primitives, and the latest React 19 runtime.
+Built with the Next.js App Router, Tailwind CSS v4 tokens, shadcn/ui primitives, and the latest React 17 runtime.
 
 ## ✨ Highlights
 
