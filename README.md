@@ -1,4 +1,4 @@
-# WinShell Project Landing Site
+# WinShell Project Landing Site PRE
 
 An immersive, neon-inspired landing experience for the WinShell university capstone. The site pairs a WebGL shader backdrop with glassmorphism download cards and a scrollable PDF viewer so visitors can explore the full project report without leaving the page.
 
